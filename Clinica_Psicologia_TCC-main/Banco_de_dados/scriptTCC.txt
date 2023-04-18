@@ -1,0 +1,115 @@
+USE MASTER IF EXISTS(SELECT * FROM SYS.databases WHERE NAME = 'bdempathia')
+DROP DATABASE bdempathia
+GO
+
+ 
+
+CREATE DATABASE bdempathia
+GO
+
+ 
+
+USE bdempathia
+GO
+
+CREATE TABLE Usuario (
+ID int identity,
+Email varchar(100),
+Senha varchar(8),
+PRIMARY KEY(id)
+)
+
+CREATE TABLE Consulta (
+id int identity,
+tratamento varchar(50),
+medicamentos varchar(50),
+data date,
+sintomas varchar(500),
+diagnostico_atual varchar(500),
+tempo time,
+ID_Medico int,
+ID_Paciente int,
+PRIMARY KEY(id),
+FOREIGN KEY(ID_Medico) REFERENCES Medico(id),
+FOREIGN KEY(ID_Paciente) REFERENCES Paciente(id)
+)
+
+
+CREATE TABLE Medico (
+ID int identity,
+ID_Usuario int,
+ID_Especialidade int,
+ID_Clinica int,
+Nome varchar(50),
+CRM varchar(20),
+PRIMARY KEY(id),
+FOREIGN KEY(ID_Usuario) REFERENCES Usuario(id),
+FOREIGN KEY(ID_Especialidade) REFERENCES Especialidade(id),
+FOREIGN KEY(ID_Clinica) REFERENCES Clinica(id)
+)
+
+CREATE TABLE Medicamento (
+id int identity,
+termino time,
+inicio time,
+horario time,
+nome varchar(50),
+dosagem decimal(10,2),
+PRIMARY KEY(id)
+)
+
+CREATE TABLE Mensalidade (
+id int identity,
+informacao_pagamento varchar(100),
+saldo_devedor decimal(10,2),
+total decimal(10,2),
+PRIMARY KEY(id)
+)
+
+CREATE TABLE Clinica (
+ID int identity,
+Horário de atendimento time,
+CNPJ varchar(18),
+Especialidades médicas varchar(100),
+Telefone varchar(20),
+Endereço varchar(100),
+Email_comercial varchar(50),
+PRIMARY KEY(id)
+)
+
+CREATE TABLE Funcionario (
+id int identity,
+salario money,
+data contratacao date,
+nome varchar(50),
+funcao varchar(100),
+RG varchar(11),
+CPF varchar(11),
+Endereço varchar(100),
+Telefone varchar(20),
+Sexo char(1),
+PRIMARY KEY(id)
+)
+
+CREATE TABLE Especialidade (
+id int identity,
+Nome varchar(50),
+PRIMARY KEY(id)
+)
+
+CREATE TABLE Paciente (
+ID int identity,
+ID_Usuario int,
+RG varchar(11),
+CPF varchar(11),
+Nome varchar(50),
+Sexo char(1),
+Alergia varchar(50),
+Medicamentos_Recorrentes varchar(50),
+Data_nasc date,
+Telefone varchar(20),
+Endereço varchar(100),
+PRIMARY KEY(id),
+FOREIGN KEY(ID_Usuario) REFERENCES Usuario(id)
+)
+
