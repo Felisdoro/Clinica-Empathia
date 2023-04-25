@@ -14,7 +14,7 @@ html,body{
 .header{
     min-height: 100vh;
     width:100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(imagens/banner.png);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(imagens/banner.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -48,7 +48,7 @@ nav img{
     content:'';
     width: 0%;
     height: 2px;
-    background: #ff8ba7;
+    background: #291162;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -93,8 +93,8 @@ nav img{
 }
 
 .BotaoComeço:hover{
-    border: 1px solid #ffc6c7;
-    background: #ffc6c7;
+    border: 1px solid #291162;
+    background: #291162;
     transition: 1s;
 }
 /* parte do texto e do botão */
@@ -115,7 +115,7 @@ nav .fa{
     }
     .nav-links{
         position: absolute;
-        background: #33272a;
+        background: #000026;
         height: 100vh;
         width: 200px;
         top:0;
@@ -167,7 +167,7 @@ a restrição de layout de uma div */
 }
 .profissionaisColuna{
     flex-basis: 31%;
-    background: #faeee7;
+    background: #f2e7fa;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
@@ -193,14 +193,39 @@ h3{
 /* Parte que explica os Profissionais */
 
 /* Parte que explica as Unidades */
-.unidades{
-    width:80%;
+
+.conhecerUnidade{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(imagens/unidadeLocal.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.conhecerUnidade h1{
+    color:#fff;
+    margin-bottom: 40px;
+    padding: 0;
+
+}
+/* deixar a sessão do conher unidade responsivo */
+@media(max-width: 700px){
+    .conhecerUnidade h1{
+        font-size: 24px;
+    }
+}
+
+.unidade{
+    width:100%;
     margin: auto;
     text-align: center;
     padding-top: 50px;
 }
 
-.unidadesColuna{
+.unidadeColuna{
     flex-basis: 32%;
     border-radius: 10px;
     margin-bottom: 30px;
@@ -208,10 +233,11 @@ h3{
     overflow: hidden;
 }
 
-.unidadesColuna img{
+.unidadeColuna img{
     width: 100%;
     display: block;
 }
+
 /* nome que fica no centro da imagem das unidades */
 
 .layer{
@@ -295,7 +321,7 @@ overflow: hidden;
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
-    background-color: #faeee7;
+    background-color: #f2e7fa;
     padding: 25px;
     cursor: pointer;
     display: flex;
@@ -318,7 +344,7 @@ overflow: hidden;
 }
 /* estrelinhas da avaliação */
 .avaliacoesColuna .fa{
-    color: #ff8ba7;
+    color: #291162;
 }
 /* deixar a parte das avaliações responsivas */
 
@@ -373,7 +399,7 @@ overflow: hidden;
 /* icones do footer */
 
 .icones .fa{
-    color:#ff8ba7;
+    color:#291162;
     margin: 0 13px;
     cursor: pointer;
     padding: 18px 0;
@@ -381,7 +407,7 @@ overflow: hidden;
 /* coração do footer s2 */
 
 .fa-heart-o{
-    color: #ff8ba7;
+    color: #291162;
 }
 
 /*-----------------------Pagina do sobre nós---------------------------*/
@@ -423,9 +449,9 @@ overflow: hidden;
 }
 
 .botaoVermelho{
-    border: 1px solid #ff8ba7;
+    border: 1px solid #291162;
     background: transparent;
-    color: #ff8ba7;
+    color: #291162;
 }
 
 .botaoVermelho:hover{
@@ -433,11 +459,142 @@ overflow: hidden;
     
 }
 
+/*--------------------------  Pagina da  Loja   ----------------------------------------*/
+
+.sub-headerLoja{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,07), rgba(4,9,30,0.3)),url(imagens/backgroundLoja.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.loja{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.lojaColuna{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.lojaColuna img{
+    width: 50%;
+}
+
+.lojaColuna h1{
+    padding-top: 0;
+}
+
+.lojaColuna p{
+    padding: 15px 0 25px;
+}
+
+/*----------------------- login e cadastro -------------------------*/
 
 
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,50,0.7),rgba(0,0,50,0.7)), url(imagens/loginBackground.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
 
+.form-box{
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    padding: 50px 60px 70px;
+    text-align: center;
+}
 
+.form-box h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: #291162;
+    position: relative;
+}
 
+.form-box h1::after{
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: #291162;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
+.input-field{
+    background: #f2e7fa;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
 
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
 
+/* ICONES DA TELA DE CADASTRO/LOGIN */
+
+.input-field i{
+    margin-left: 15px;
+    color: #291162;
+}
+
+form p{
+    text-align: left;
+    font-size: 13px;
+}
+form p a{
+
+    color: #291162;
+}
+
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-field button{
+    flex-basis: 48%;
+    background: #291162;
+    color: #f2e7fa;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+.input-group{
+    height: 280px;
+}
+
+.btn-field button.disable{
+    background: #f2e7fa;
+    color: #555;
+}
