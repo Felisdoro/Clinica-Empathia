@@ -29,3 +29,25 @@ cadastrarBtn.onclick = function(){
     cadastrarBtn.classList.remove("disable");
     signupBtn.classList.add("disable");
 }
+
+/* VALIDAR LOGIN */
+
+function logar(){
+
+    var login = document.getElementById('login').value;
+    var senha = document.getElementById('senha').value;
+
+    if(login == "admin@gmail.com" && senha == "12345"){
+        alert('Sucesso');
+        location.href = "adm.html";
+    
+    }else{
+        alert('Usuario ou senha incorretos');
+    }
+
+    if(login == "gabriel@gmail.com" && senha == "12345"){
+        alert('Sucesso');
+        location.href = "index.html";
+
+    }
+}

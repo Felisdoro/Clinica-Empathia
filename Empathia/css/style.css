@@ -14,7 +14,7 @@ html,body{
 .header{
     min-height: 100vh;
     width:100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(imagens/banner.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/Empathia/imagens/banner.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -197,7 +197,7 @@ h3{
 .conhecerUnidade{
     margin: 100px auto;
     width: 80%;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(imagens/unidadeLocal.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/Empathia/imagens/unidadeLocal.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -362,7 +362,7 @@ overflow: hidden;
 .entreContato{
     margin: 100px auto;
     width: 80%;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(imagens/banner2.png);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/Empathia/imagens/banner2.png);
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -415,7 +415,7 @@ overflow: hidden;
 .sub-header{
     height: 50vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,07), rgba(4,9,30,0.7)),url(imagens/background.jpg);
+    background-image: linear-gradient(rgba(4,9,30,07), rgba(4,9,30,0.7)),url(/Empathia/imagens/background.jpg);
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -464,7 +464,7 @@ overflow: hidden;
 .sub-headerLoja{
     height: 50vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,07), rgba(4,9,30,0.3)),url(imagens/backgroundLoja.jpg);
+    background-image: linear-gradient(rgba(4,9,30,07), rgba(4,9,30,0.3)),url(/Empathia/imagens/backgroundLoja.jpg);
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -500,7 +500,7 @@ overflow: hidden;
 .container{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,50,0.7),rgba(0,0,50,0.7)), url(imagens/loginBackground.jpg);
+    background-image: linear-gradient(rgba(0,0,50,0.7),rgba(0,0,50,0.7)), url(/Empathia/imagens/loginBackground.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -514,7 +514,7 @@ overflow: hidden;
     left: 50%;
     transform: translate(-50%,-50%);
     background: #fff;
-    padding: 50px 60px 70px;
+    padding: 50px 60px 160px;
     text-align: center;
 }
 
@@ -559,25 +559,18 @@ input{
 
 
 /*----------------------- Cadastro -------------------------*/
-.container{
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0,0,50,0.7),rgba(0,0,50,0.7)), url(imagens/loginBackground.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
 
 .singup-box{
     width: 90%;
     max-width: 650px;
-    position: absolute;
+    position:absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     background: #fff;
     padding: 50px 50px 580px;
     text-align: center;
+    margin-top: 20%;
 }
 
 .singup-box h1{
@@ -597,25 +590,6 @@ input{
     bottom: -12px;
     left: 50%;
     transform: translateX(-50%);
-}
-
-.input-field{
-    background: #f2e7fa;
-    margin: 15px 0;
-    border-radius: 3px;
-    display: flex;
-    align-items: center;
-    max-height: 65px;
-    transition: max-height 0.5s;
-    overflow: hidden;
-}
-
-input{
-    width: 100%;
-    background: transparent;
-    border: 0;
-    outline: 0;
-    padding: 18px 15px;
 }
 
 .location{
@@ -662,6 +636,7 @@ form p a{
     background: #291162;
     color: #f2e7fa;
     height: 40px;
+    width: 200px;
     border-radius: 20px;
     border: 0;
     outline: 0;
@@ -690,6 +665,7 @@ form p a{
     background: #291162;
     color: #f2e7fa;
     height: 40px;
+    width: 200px;
     border-radius: 20px;
     border: 0;
     outline: 0;
@@ -697,3 +673,17 @@ form p a{
     transition: background 1s;
 }
 
+.botaoEnviar{
+    background-color: #291162;
+    color: #fff;
+    border-radius: 20px;
+    width: 46%;
+    height: 42px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    cursor: pointer;
+    position: relative;
+}
