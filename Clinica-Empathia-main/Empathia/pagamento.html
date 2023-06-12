@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Controle Geral</title>
+
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/style-adm.css">
+  </head>
+  <body>
+    <div class="grid-container">
+
+      <!-- Header -->
+      <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined">menu</span>
+        </div>
+        <div class="header-left">
+          <span class="material-icons-outlined">search</span>
+        </div>
+        <div class="header-right">
+          <a href=""><span class="material-icons-outlined">email</span></a>
+          <a href="account.html"><span class="material-icons-outlined">account_circle</span></a>
+          <a href="index.html"><span class="">account_logout</span></a>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-brand">
+            <span class="material-icons-outlined">control</span> CONTROLE GERAL 
+          </div>
+          <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+        </div>
+
+        <ul class="sidebar-list">
+        <li class="sidebar-list-item">
+            <a href="agendar.html" target="_blank">
+              <span class="material-icons-outlined"></span> Agendar consulta
+            </a>
+          </li>
+
+          <li class="sidebar-list-item">
+            <a href="cliente.html" target="_blank">
+              
+              <span class="fa-thin fa-pen-to-square"></span>Clientes
+            </a>
+          </li>
+
+          <li class="sidebar-list-item">
+            <a href="funcionario.html" target="_blank">
+              <span class="material-icons-outlined">funcionario</span> Funcionários
+            </a>
+          </li>
+
+         <!-- <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">add_shopping_cart</span> Purchase Orders
+            </a>
+          </li> 
+
+          <li class="sidebar-list-item">
+            <a href="pagamento.html" target="_blank">
+              <span class="material-icons-outlined">faturamento</span> Pagamentos
+            </a>
+          </li> -->
+
+          <li class="sidebar-list-item">
+            <a href="config.html" target="_blank">
+              <span class="material-icons-outlined">settings</span> Configurações
+            </a>
+          </li>
+        </ul>
+      </aside>
+    <!-- End Sidebar -->
+
+    <!-- Main -->
+    <main class="main-container">
+        <div class="main-title">
+          <p class="font-weight-bold">FUNCIONÁRIOS</p>
+        </div>
+        <div>
+
+            <br>
+            <a href="crud-func.html"><button type="button" class="btn btn-primary btn-sm">CADASTRAR FUNCIONÁRIO</button></a>
+
+            <br>
+            <br>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">CPF</th>
+                    <th scope="col">E-mail</th>
+                    <th scope="col">Cargo</th>
+                  </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Michael Corleone </td>
+                    <td>355.899.277-09</td>
+                    <td>michael.corleonome@empathia.com.br</td>
+                    <td>Psicanalista</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Anabeth Fuzzigatto</td>
+                    <td>388.976.344-18</td>
+                    <td>anabeth.fuzzigatto@empathia.com.br</td>
+                    <td>Psiquiatra</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Luke Skywalker</td>
+                    <td>342.257.085.16</td>
+                    <td>luke.skywalker@empathia.com.br</td>
+                    <td>Psicólogo</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+        
+
+        
+      </main>
+      <!-- End Main -->
+
+    </div>
+
+    <!-- Scripts -->
+    <!-- ApexCharts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
