@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Controle Geral</title>
+
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/style-adm.css">
+  </head>
+  <body>
+    <div class="grid-container">
+
+      <!-- Header -->
+      <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined">menu</span>
+        </div>
+        <div class="header-left">
+          <span class="material-icons-outlined">search</span>
+        </div>
+        <div class="header-right">
+          <a href=""><span class="material-icons-outlined">email</span></a>
+          <a href="account.html"><span class="material-icons-outlined">account_circle</span></a>
+          <a href="index.html"><span class="">Sair...</span></a>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-brand">
+            <span class="material-icons-outlined">control</span> CONTROLE GERAL 
+          </div>
+          <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+        </div>
+
+        <ul class="sidebar-list">
+        <li class="sidebar-list-item">
+            <a href="agendar.html" target="_blank">
+              <span class="material-icons-outlined"></span> Agendar consulta
+            </a>
+          </li>
+
+          <li class="sidebar-list-item">
+            <a href="cliente.html" target="_blank">
+              
+              <span class="fa-thin fa-pen-to-square"></span>Clientes
+            </a>
+          </li>
+
+          <li class="sidebar-list-item">
+            <a href="funcionario.html" target="_blank">
+              <span class="material-icons-outlined">funcionario</span> Funcionários
+            </a>
+          </li>
+
+         <!-- <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">add_shopping_cart</span> Purchase Orders
+            </a>
+          </li> 
+
+          <li class="sidebar-list-item">
+            <a href="pagamento.html" target="_blank">
+              <span class="material-icons-outlined">faturamento</span> Pagamentos
+            </a>
+          </li> 
+
+          <li class="sidebar-list-item">
+            <a href="config.html" target="_blank">
+              <span class="material-icons-outlined">settings</span> Configurações
+            </a>
+          </li>-->
+        </ul>
+      </aside>
+    <!-- End Sidebar -->
+
+
+      <!--main-->
+      <main class="main-container">
+        <div class="main-title">
+          <p class="font-weight-bold">DADOS DO CLIENTE</p>
+        </div>
+
+
+        <form class="row g-3">
+        <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Nome</label>
+        <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <div class="col-md-6">
+        <label for="inputPassword4" class="form-label">Sobrenome</label>
+        <input type="password" class="form-control" id="inputPassword4">
+        </div>
+
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">RG</label>
+          <input type="password" class="form-control" id="inputPassword4">
+          </div>
+
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">CPF</label>
+            <input type="password" class="form-control" id="inputPassword4">
+            </div>
+
+        <div class="col-12">
+        <label for="inputAddress" class="form-label">E-mail</label>
+        <input type="text" class="form-control" id="inputemail" placeholder="digite.seu.email@gmail.com">
+        </div>
+
+        <div class="col-12">
+            <label for="inputAddress" class="form-label">Telefone</label>
+            <input type="text" class="form-control" id="inputemail" placeholder="11 98765-4321">
+            </div>
+
+
+
+        <div class="col-12">
+        <label for="inputAddress2" class="form-label">Endereço</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, Casa, ou Comercial">
+        </div>
+        <div class="col-md-6">
+        <label for="inputCity" class="form-label">Cidade</label>
+        <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="col-md-4">
+        <label for="inputState" class="form-label">Estado</label>
+        <select id="inputState" class="form-select">
+            <option selected>Escolha...</option>
+            <option>São Paulo</option>
+            <option>Rio de Janeiro</option>
+            <option>Minas Gerais</option>
+            <option>Santa Catarina</option>
+            <option>Rio Grande do Sul</option>
+
+
+        </select>
+        </div>
+        <div class="col-md-2">
+        <label for="inputZip" class="form-label">CEP</label>
+        <input type="text" class="form-control" id="inputZip">
+        </div>
+        <div class="col-12">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+            Atualmente realiza as terapias recorrentes com a Clínica.
+            </label>
+        </div>
+        </div>
+        <div class="col-12">
+        <button type="submit" class="btn btn-primary">Salvar</button>
+        </div>
+        </form>
+        </main>
+<!-- End Main -->
+
+</div>
+
+<!-- Scripts -->
+<!-- ApexCharts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
+<!-- Custom JS -->
+        <script src="js/script1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+</body>
+</html>    
