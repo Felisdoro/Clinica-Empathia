@@ -11,7 +11,8 @@ GO
 
 CREATE TABLE Login
 (
-	email	VARCHAR(100) NOT NULL,
+   id INT IDENTITY PRIMARY KEY,
+	email	NVARCHAR(100) NOT NULL,
 	senha	VARCHAR(50)	 NOT NULL
 )
 GO
@@ -26,10 +27,10 @@ CREATE TABLE Cadastro
     nome					 NVARCHAR(100) NOT NULL,
     rg					 CHAR(9)  NOT NULL, 
     cpf					 CHAR(11)  NOT NULL,
-    sexo					 CHAR(1)	  NULL, -- F ou M 
+    sexo					 VARCHAR(10)	  NULL, --Feminino MASCUlino ou Outro
     data_nasc			 DATE  NOT NULL,
-    telefone				 VARCHAR(20)  NOT NULL,
-    email				 NVARCHAR(150) NOT NULL,
+    telefone				 VARCHAR(11)  NOT NULL,
+    email				 NVARCHAR(100) NOT NULL,
     logradouro			 VARCHAR(100) NOT NULL,
     numero				 VARCHAR(5) NOT NULL,
     complemento			 VARCHAR(100) NOT NULL,
@@ -39,7 +40,7 @@ CREATE TABLE Cadastro
     cep					 VARCHAR(10) NOT NULL,
     servico_modalidade	 VARCHAR(100) NOT NULL,
     servico_seguimento	 VARCHAR(100) NOT NULL,	
-
+    
 )
 GO
 
@@ -65,7 +66,7 @@ CREATE TABLE Paciente
    nome					 NVARCHAR(100) NOT NULL,
    rg					    CHAR(9)  NOT NULL, 
    cpf					 CHAR(11)  NOT NULL,
-   sexo					 VARCHAR(10)	  NULL, -- F ou M 
+    sexo					 VARCHAR(10)	  NULL, --Feminino MASCUlino ou Outro
    data_nasc			 VARCHAR(11)  NOT NULL,
    telefone				 VARCHAR(20)  NOT NULL,
    email				    NVARCHAR(150) NOT NULL,
@@ -90,8 +91,8 @@ CREATE TABLE Funcionario
    nome           NVARCHAR(100) NOT NULL,
    rg			      CHAR(9)  NOT NULL, 
    cpf			   CHAR(11)  NOT NULL,
-   sexo			   CHAR(2)	  NULL, -- F ou M 
-   data_nasc		VARCHAR(11)  NOT NULL,
+    sexo					 VARCHAR(10)	  NULL, --Feminino MASCUlino ou Outro
+   data_nasc		DATE  NOT NULL,
    telefone			VARCHAR(20)  NOT NULL,
    email			   NVARCHAR(150) NOT NULL,
    logradouro		VARCHAR(100) NOT NULL,
